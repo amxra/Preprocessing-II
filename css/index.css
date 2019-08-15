@@ -2,6 +2,13 @@
 .dashedBorder {
   border-bottom: 2px dashed grey;
 }
+.buttonStyle {
+  padding: 2rem;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #17A2B8;
+  border-radius: 20px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -266,4 +273,20 @@ nav ul li a:hover {
 }
 .content-section {
   margin: 0;
+}
+.btn {
+  padding: 2rem;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #17A2B8;
+  border-radius: 20px;
+}
+.content-pick {
+  display: flex;
+  align-items: center;
+}
+.content-pick .destination {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
