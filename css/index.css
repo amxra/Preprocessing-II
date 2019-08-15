@@ -198,6 +198,12 @@ nav ul li a:hover {
   text-decoration: line-through;
   text-decoration-color: #17A2B8;
 }
+@media (max-width: 500px) {
+  nav {
+    margin-top: 1rem;
+    width: 100%;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -261,6 +267,11 @@ nav ul li a:hover {
   padding: 2rem;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .page-header {
+    flex-direction: column;
+  }
 }
 .page-banner {
   border-bottom: 2px dashed grey;
