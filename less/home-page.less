@@ -62,34 +62,29 @@
 
 
 .page-header{
-  border-bottom: @dashed-border;
+  .dashedBorder();
   display: flex;
   padding: 2rem;
   justify-content: space-between;
   align-items: center;
 }
 
-nav{
-  width: 70%;
+
+
+
+// Page Banner
+
+.page-banner{
+  .dashedBorder();
 }
+.banner-text{
+  padding: @verticalPaddingOnly;
 
-nav ul{
-  display: flex;
-  justify-content: space-evenly;
-  
-}
-
-nav ul li{
-  display: inline;
-}
-
-nav ul li a{
-  text-decoration: none;
-  color: black;
-  font-size: 1.5rem;
-
-  &:hover{
-    text-decoration: line-through;
-    text-decoration-color: @eastern-blue;
+  p{
+    padding-top: 1rem;
   }
+}
+
+.content-section{
+  margin:0;
 }

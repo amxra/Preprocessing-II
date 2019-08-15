@@ -1,4 +1,7 @@
 /*Imports */
+.dashedBorder {
+  border-bottom: 2px dashed grey;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -169,6 +172,25 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  width: 70%;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+nav ul li {
+  display: inline;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+nav ul li a:hover {
+  text-decoration: line-through;
+  text-decoration-color: #17A2B8;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -233,22 +255,15 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-nav {
-  width: 70%;
+.page-banner {
+  border-bottom: 2px dashed grey;
 }
-nav ul {
-  display: flex;
-  justify-content: space-evenly;
+.banner-text {
+  padding: 2rem 0;
 }
-nav ul li {
-  display: inline;
+.banner-text p {
+  padding-top: 1rem;
 }
-nav ul li a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.5rem;
-}
-nav ul li a:hover {
-  text-decoration: line-through;
-  text-decoration-color: #17A2B8;
+.content-section {
+  margin: 0;
 }
