@@ -72,15 +72,6 @@
     }
   }
 
-  // @media @mobile{
-  //   .content-pick{
-  //     flex-direction: column;
-  //     border: 1px solid red;
-  //     .destination{
-  //       border: 1px solid blue;
-  //     }
-  //   }
-  // }
 
   .content-pick {
     padding-top: 30px;
@@ -127,13 +118,18 @@
   padding: 2rem;
   justify-content: space-between;
   align-items: center;
+
+  @media @mobile {
+      flex-direction: column;
+  }
+
+  @media @tablet {
+    flex-direction: column;
 }
 
-@media @mobile{
-  .page-header{
-    flex-direction: column;
-  }
+
 }
+
 
 
 

@@ -217,6 +217,12 @@ nav ul li a:hover {
     width: 100%;
   }
 }
+@media (max-width: 800px) {
+  nav {
+    margin-top: 1rem;
+    width: 100%;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -333,6 +339,11 @@ nav ul li a:hover {
   align-items: center;
 }
 @media (max-width: 500px) {
+  .page-header {
+    flex-direction: column;
+  }
+}
+@media (max-width: 800px) {
   .page-header {
     flex-direction: column;
   }
