@@ -15,6 +15,13 @@
 .mobilePFontsize {
   font-size: 1.5rem;
 }
+.buttonAnimation {
+  animation-name: animateButton;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 0;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -288,12 +295,31 @@ nav ul li a:hover {
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+  font-size: 2.5rem;
+  font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+  }
 }
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
 @media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 80%;
+    padding: 0 5%;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    max-width: 90%;
+    padding: 0 5%;
+  }
+}
+@media (max-width: 800px) {
   .container {
     max-width: 90%;
     padding: 0 5%;
@@ -342,21 +368,27 @@ nav ul li a:hover {
   background-color: #17A2B8;
   border-radius: 20px;
 }
+@media (max-width: 500px) {
+  .btn {
+    padding: 1rem;
+  }
+}
+@media (max-width: 800px) {
+  .btn {
+    padding: 1rem;
+  }
+}
 .content-pick {
   display: flex;
   align-items: center;
+}
+@media (max-width: 800px) {
+  .content-pick {
+    padding: 2%;
+  }
 }
 .content-pick .destination {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-@media (max-width: 500px) {
-  .content-pick {
-    flex-direction: column;
-    border: 1px solid red;
-  }
-  .content-pick .destination {
-    border: 1px solid blue;
-  }
 }
