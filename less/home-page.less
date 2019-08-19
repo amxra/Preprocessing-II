@@ -1,21 +1,42 @@
 .home {
 
+
+ 
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+    @media @mobile{
+      flex-direction: column;
+
+      h1{
+        .mobileH1Fontsize();
+      }
+
+      p{
+        .mobilePFontsize();
+      }
+    }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile{
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile{
+        width: 100%;
+      }
 
       img {
         border-radius: 10px;
@@ -26,6 +47,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile{
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -47,15 +72,133 @@
     }
   }
 
+
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    .mobileH1Fontsize();
+    .mobilePFontsize();
+
+    @media @mobile{
+      flex-direction: column;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 80%;
+        padding: 0 5%;
+      }
     }
   }
 }// home
+
+
+@media @tablet{
+  .container{
+    max-width: 90%;
+    padding: 0 5%;
+  }
+}
+
+@media @mobile{
+  .container{
+    max-width: 90%;
+    padding: 0 5%;
+  }
+}
+
+
+
+
+.page-header{
+  .dashedBorder();
+  display: flex;
+  padding: 2rem;
+  justify-content: space-between;
+  align-items: center;
+
+  
+
+  @media @tablet {
+    flex-direction: column;
+}
+
+@media @mobile {
+  flex-direction: column;
+}
+
+
+}
+
+
+
+
+// Page Banner
+
+.page-banner{
+  .dashedBorder();
+}
+.banner-text{
+  padding: @verticalPaddingOnly;
+
+  p{
+    padding-top: 1rem;
+  }
+}
+
+.content-section{
+  margin:0;
+}
+
+@media @mobile{
+  .page-banner {
+    img{
+    width: 95%;
+    margin: 0 2.5%;
+    }
+    h1{
+      .mobileH1Fontsize();
+    }
+    p{
+      .mobilePFontsize();
+    }
+  }
+}
+
+
+
+//Button
+
+.btn{
+  .buttonStyle();
+
+
+  @media @tablet{
+    padding: 1rem;
+  }
+
+  @media @mobile{
+    padding: 1rem;
+  }
+}
+
+.content-pick{
+  display: flex;
+  align-items: center;
+
+  @media @tablet{
+    padding: 2%;
+  }
+  .destination{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+
+

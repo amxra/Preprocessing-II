@@ -1,1 +1,40 @@
 // Navigation Styles here
+
+nav{
+    width: 70%;
+  }
+  
+  nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    
+  }
+  
+  nav ul li{
+    display: inline;
+  }
+  
+  nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+  
+    &:hover{
+      text-decoration: line-through;
+      text-decoration-color: @eastern-blue;
+    }
+  }
+
+  @media @mobile{
+    nav{
+     margin-top: 1rem;
+     width: 100%;
+    }
+  }
+
+  @media @tablet{
+    nav{
+     margin-top: 1rem;
+     width: 100%;
+    }
+  }
